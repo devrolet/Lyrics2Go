@@ -36,6 +36,7 @@ UI.searchForm.addEventListener('submit', (e) => {
                         UI.messageDiv.innerHTML = '';
                         UI.messageDiv.classList.remove('error');
                         UI.searchForm.reset();
+                        UI.resultDiv.innerHTML = '';
                     }, 3000);
                 }
             })
