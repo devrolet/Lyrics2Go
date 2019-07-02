@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lyrics2Go</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main id="content" class="content">
+            <h1>Lyrics2Go</h1>
+
+
+            <div class="container-fluid">
+                    <div id="search" class="search">
+                            <h3>Search</h3>
+                            <p>Search by song and artist:</p>
+                            <p class="mandatory"><span> * </span>Mandatory</p>
+                            <form action="#" id="search-form">
+                                <div class="input">
+                                    <label for="artist">Artist: <span>*</span></label>
+                                    <input type="text" id="artist" placeholder="Artist">
+                                </div>
+                                <div class="input">
+                                    <label for="song">Song: <span>*</span></label>
+                                    <input type="text" id="song" placeholder="Song Name">
+                                </div>
+
+                                <div class="input send">
+                                    <input class="btn btn-success" type="submit" value="Search Lyrics">
+                                </div>
+                                <div id="messages"></div>
+                            </form>
+                    </div>
+                    <div class="lyric">
+                            <h3>Song:</h3>
+                            <div id="result"></div>
+                    </div>
+            </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
